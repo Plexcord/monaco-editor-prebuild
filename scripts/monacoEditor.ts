@@ -4,7 +4,7 @@ import { makeLegalIdentifier } from "@rollup/pluginutils";
 
 import metadata, { type EditorFeature, type EditorLanguage, type IFeatureDefinition, type IWorkerDefinition, type NegatedEditorFeature } from "../node_modules/monaco-editor/esm/metadata.js";
 import { mkdir, writeFile } from "node:fs/promises";
-import { posix, resolve } from "node:path";
+import { relative, resolve } from "node:path";
 
 
 interface MonacoEditorOptions {
@@ -148,7 +148,7 @@ for (const { id, entry, name } of resolvedWorkers) {
     }
 
     const fullWorkerPath = resolve(monacoWorkerPrefix, entry);
-    const workerEntryId = posix.relative(outDir, fullWorkerPath);
+    const workerEntryId = relative(outDir, fullWorkerPath).replaceAll("\\", "/");
     const refId = workerEntryId;
     const names = new Set([name]);
 
