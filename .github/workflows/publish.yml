@@ -10,7 +10,7 @@ permissions:
 
 jobs:
     publish:
-        if: github.repository == 'Vencord/monaco-editor-prebuild'
+        if: github.repository == 'Plexcord/monaco-editor-prebuild'
         runs-on: ubuntu-latest
 
         steps:

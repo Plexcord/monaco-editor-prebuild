@@ -1,17 +1,17 @@
 {
-  "name": "@vencord/monaco-editor",
+  "name": "@plexcord/monaco-editor",
   "private": false,
   "version": "0.57.0-beta.4",
-  "description": "monaco editor, pre-bundled and optimized with size in mind for use in vencord",
+  "description": "monaco editor, pre-bundled and optimized with size in mind for use in plexcord",
   "main": "index.js",
   "keywords": [],
-  "author": "sadan (https://sadan.zip)",
+  "author": "MutanPlex (https://github.com/MutanPlex)",
   "scripts": {
     "build": "node scripts/monacoEditor.ts && vite build",
     "prepublishOnly": "pnpm build"
   },
   "repository": {
-    "url": "git+https://github.com/Vencord/monaco-editor-prebuild.git",
+    "url": "git+https://github.com/Plexcord/monaco-editor-prebuild.git",
     "type": "git"
   },
   "license": "MIT",
@@ -26,7 +26,7 @@
     "vite": "^8.3.5"
   },
   "bugs": {
-    "url": "https://github.com/Vencord/monaco-editor-prebuild/issues"
+    "url": "https://github.com/Plexcord/monaco-editor-prebuild/issues"
   },
-  "homepage": "https://github.com/Vencord/monaco-editor-prebuild#readme"
+  "homepage": "https://github.com/Plexcord/monaco-editor-prebuild#readme"
 }

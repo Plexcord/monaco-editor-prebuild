@@ -1,12 +1,12 @@
-# @vencord/monaco-editor
+# @plexcord/monaco-editor
 
-This repo contains the necessary files to create an optimized build of [monaco-editor](https://microsoft.github.io/monaco-editor/) for [vencord](https://vencord.dev/)
+This repo contains the necessary files to create an optimized build of [monaco-editor](https://microsoft.github.io/monaco-editor/) for [plexcord](https://plexcord.club/)
 
 # How it works
 
 With a few tricks, we can get monaco down to *only* 4.9MiB (from 14MiB)
 
-[esbuild](https://esbuild.github.io/), the build system used for vencord, just isn't enough. While esbuild is a great tool, it doesn't have support for anything like the [emitFile](https://rollupjs.org/plugin-development/#this-emitfile) plugin context method provided by rollup.
+[esbuild](https://esbuild.github.io/), the build system used for plexcord, just isn't enough. While esbuild is a great tool, it doesn't have support for anything like the [emitFile](https://rollupjs.org/plugin-development/#this-emitfile) plugin context method provided by rollup.
 
 esbuild also provides us with a blessing in disguise, it doesn't support the standard syntax for bundling workers
 
